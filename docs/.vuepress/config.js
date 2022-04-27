@@ -417,7 +417,7 @@ module.exports = {
                     "/md/other/": genBarOther(),
                     "/md/java/interview/": genBarJavaInterview(),
                     "/md/java/develop-jvm/": genBarJavaDevelopJvm(),
-                    "/md/java/core/": genBarJavaCore(),
+                    "/md/01.Java基础/": genBarJavaCore(),
                     "/md/spring/develop-spring/": genBarSpringDevelopSpring(),
                     "/md/spring/develop-mybatis/": genBarSpringDevelopMybatis(),
                     "/md/spring/source-code/": genBarSpringSourceCode(),
@@ -552,18 +552,11 @@ function genBarJavaDevelopJvm() {
 function genBarJavaCore() {
     return [
         {
-            title: "基础技术",
+            title: "Java基础",
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                "2019-12-10-[有点干货]Jdk1.8新特性实战篇41个案例.md",
-                "2019-12-21-[有点干货]JDK、CGLIB动态代理使用以及源码分析.md",
-                "2020-01-06-[源码分析]咋嘞？你的IDEA过期了吧！加个Jar包就破解了，为什么？.md",
-                "2020-01-18-似乎你总也记不住，byte的取值范围是 -127~128 还是 -128~127.md",
-                "2020-03-07-这种场景你还写ifelse你跟孩子坐一桌去吧.md",
-                "2020-05-05-汉字不能编程？别闹了，只是看着有点豪横！容易被开除！.md",
-                "2020-11-22-鹿鼎记 · 韦小宝，丽春院、天地会、入皇宫等五个场景，搭配不同剧情讲解多线程和锁，真香！.md",
-                "2021-04-21-一个Bug，让我发现了 Java 界的AJ锥！.md"
+                "01.泛型.md",
             ]
         }
     ]

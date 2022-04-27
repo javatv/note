@@ -4,12 +4,9 @@ heroImage: /images/system/blog-03.png
 heroText: Javatv
 tagline: 学习知识，目光坚毅，勤于探索，乐于分享
 actionLinks:
-- link: /md/other/guide-to-reading.md
+- link: /md/01.Java基础/01.泛型.md
   text: 开始阅读 →
   class: primary
-- link: https://t.zsxq.com/Ja27ujq
-  text: 知识星球
-  class: secondary  
 features:
 - title: 沉淀
   details: 承遇朝霞，年少正恰。整装戎马，刻印风华。

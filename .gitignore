@@ -22,3 +22,5 @@ urls.txt
 *.iws
 *.iml
 *.ipr
+
+/.site/

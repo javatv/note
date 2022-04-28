@@ -177,7 +177,7 @@ export default {
             title: '开发工具',
             list: [
               {
-                title: 'git',
+                title: 'Git',
                 url: '/md/20.开发工具/02.IDEA中使用Git.html'
               },
             ]

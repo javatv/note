@@ -386,7 +386,7 @@ function genBarJavaCore() {
             ]
         },
         {
-            title: "走进 JVM",
+            title: "JVM 内存模型",
             collapsable: false,
             sidebarDepth: 0,
             children: [
@@ -624,7 +624,7 @@ function genBarAlgo() {
 function genBarDesignPatterns() {
     return [
         {
-            title: "设计模式",
+            title: "创建型模式",
             collapsable: false,
             sidebarDepth: 0,
             children: [
@@ -634,6 +634,13 @@ function genBarDesignPatterns() {
                 "03.建造者模式.md",
                 "04.单例模式.md",
                 "05.原型模式.md",
+            ]
+        },
+        {
+            title: "结构型模式",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
                 "06.适配器模式.md",
                 "07.桥接模式.md",
                 "08.装饰器模式.md",
@@ -641,6 +648,13 @@ function genBarDesignPatterns() {
                 "10.组合模式.md",
                 "11.外观模式.md",
                 "12.享元模式.md",
+            ]
+        },
+        {
+            title: "行为型模式",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
                 "13.模板方法模式.md",
                 "14.策略模式.md",
                 "15.责任链模式.md",

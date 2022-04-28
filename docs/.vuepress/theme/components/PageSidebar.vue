@@ -141,7 +141,7 @@
         <span class="show-txt">站点图</span>
         <div class="sitemap-container">
             <h4>站点导航图
-<!--              <router-link class="sitemap-top-link" key="/md/about/me/2020-08-25-13年毕业，用两年时间从外包走进互联网大厂.html" to="/md/about/me/2020-08-25-13年毕业，用两年时间从外包走进互联网大厂.html" > 关于我</router-link>-->
+              <router-link class="sitemap-top-link" key="/md/21.关于/02.关于工作.html" to="/md/21.关于/02.关于工作.html" >关于工作</router-link>
             </h4>
             <SiteMap />
         </div>

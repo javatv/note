@@ -1,6 +1,6 @@
 module.exports = {
     port: "8080",
-    dest: ".site",
+    //dest: ".site",
     base: "/",
     // 是否开启默认预加载js
     shouldPrefetch: (file, type) => {
@@ -29,25 +29,25 @@ module.exports = {
             target: '_blank', rel: 'noopener noreferrer'
         }
     },
-    // locales: {
-    //     "/": {
-    //         lang: "zh-CN",
-    //         title: "bugstack 虫洞栈",
-    //         description: "包含: Java 基础，面经手册，Netty4.x，手写Spring，用Java实现JVM，重学Java设计模式，SpringBoot中间件开发，IDEA插件开发，DDD系统架构项目开发，字节码编程..."
-    //     }
-    // },
+    locales: {
+        "/": {
+            lang: "zh-CN",
+            title: "Javatv",
+            description: "学习知识，目光坚毅，勤于探索，乐于分享"
+        }
+    },
     head: [
         // ico
         ["link", {rel: "icon", href: `/favicon.ico`}],
         // meta
         ["meta", {name: "robots", content: "all"}],
-        ["meta", {name: "author", content: "小傅哥"}],
+        ["meta", {name: "author", content: "Javatv"}],
         ["meta", {"http-equiv": "Cache-Control", content: "no-cache, no-store, must-revalidate"}],
         ["meta", {"http-equiv": "Pragma", content: "no-cache"}],
         ["meta", {"http-equiv": "Expires", content: "0"}],
         ["meta", {
             name: "keywords",
-            content: "bugstack 虫洞栈, 重学Java设计模式, 字节码编程, 中间件, Spring, Java基础, 面经手册"
+            content: "Javatv,设计模式,Spring源码,中间件,Java基础"
         }],
         ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
         ['script',
@@ -82,7 +82,7 @@ module.exports = {
               var _hmt = _hmt || [];
               (function() {
                 var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?0b31b4c146bf7126aed5009e1a4a11c8";
+                hm.src = "https://hm.baidu.com/hm.js?d58aa3ea73c1219f9c7b77eafa3e9535";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
               })();
@@ -125,12 +125,12 @@ module.exports = {
         // ['copyright', {
         //     noCopy: false, // 允许复制内容
         //     minLength: 100, // 如果长度超过 100 个字符
-        //     authorName: "https://bugstack.cn",
-        //     clipboardComponent: "请注明文章出处, [bugstack虫洞栈](https://bugstack.cn)"
+        //     authorName: "https://www.javatv.net",
+        //     clipboardComponent: "请注明文章出处, [Javatv](https://www.javatv.net)"
         // }],
         // see: https://github.com/ekoeryanto/vuepress-plugin-sitemap
         // ['sitemap', {
-        //     hostname: 'https://bugstack.cn'
+        //     hostname: 'https://www.javatv.net'
         // }],
         // see: https://github.com/IOriens/vuepress-plugin-baidu-autopush
         ['vuepress-plugin-baidu-autopush', {}],
@@ -138,7 +138,7 @@ module.exports = {
         ['vuepress-plugin-code-copy', {
             align: 'bottom',
             color: '#3eaf7c',
-            successText: '@小傅哥: 代码已经复制到剪贴板'
+            successText: '@Javatv: 代码已经复制到剪贴板'
         }],
         // see: https://github.com/tolking/vuepress-plugin-img-lazy
         ['img-lazy', {}],
@@ -165,7 +165,7 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        docsRepo: "fuzhengwei/CodeGuide",
+        docsRepo: "javatv/note",
         // 编辑文档的所在目录
         docsDir: 'docs',
         // 文档放在一个特定的分支下：
@@ -322,11 +322,20 @@ module.exports = {
                             },
                         ]
                     },
+                    {
+                        text: '关于',
+                        items: [
+                            {
+                                text: '关于工作',
+                                link: '/md/21.关于/02.关于工作.md'
+                            },
+                        ]
+                    },
                     {text: 'CSDN', link: 'https://javatv.blog.csdn.net/'},
                     {text: '旧版', link: 'http://blog.javatv.net/'},
                     {
                         text: 'Github',
-                        link: 'https://github.com/fuzhengwei/CodeGuide'
+                        link: 'https://github.com/javatv/note'
                     }
                 ],
                 sidebar: {
@@ -340,6 +349,7 @@ module.exports = {
                     "/md/08.数据结构和算法/": genBarAlgo(),
                     "/md/15.设计模式/": genBarDesignPatterns(),
                     "/md/20.开发工具/": genBarTools(),
+                    "/md/21.关于/": genBarAbout(),
                 }
             }
         }
@@ -656,6 +666,20 @@ function genBarTools() {
             sidebarDepth: 0,
             children: [
                 "02.IDEA中使用Git.md",
+            ]
+        },
+    ]
+}
+
+// 开发工具
+function genBarAbout() {
+    return [
+        {
+            title: "关于",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "02.关于工作.md",
             ]
         },
     ]

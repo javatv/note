@@ -1,2 +1,2 @@
-Sitemap: https://bugstack.cn/sitemap.xml
+Sitemap: https://www.javatv.net/sitemap.xml
 User-agent: *

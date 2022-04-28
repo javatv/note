@@ -250,7 +250,7 @@ module.exports = {
                             },
                             {
                                 text: 'RabbitMQ',
-                                link: '/md/07.消息中间件/01.RabbitMQ/01.什么是MQ.md'
+                                link: '/md/07.中间件/01.RabbitMQ/01.什么是MQ.md'
                             },
                         ]
                     },
@@ -391,7 +391,7 @@ module.exports = {
                     "/md/04.spring/": genBarSpring(),
                     "/md/05.MySQL/": genBarMySQL(),
                     "/md/06.Redis/": genBarRedis(),
-                    "/md/java/develop-jvm/": genBarJavaDevelopJvm(),
+                    "/md/07.中间件/": genBarMiddleware(),
                     "/md/spring/develop-spring/": genBarSpringDevelopSpring(),
                     "/md/spring/develop-mybatis/": genBarSpringDevelopMybatis(),
                     "/md/spring/source-code/": genBarSpringSourceCode(),
@@ -587,7 +587,33 @@ function genBarRedis() {
     ]
 }
 
-
+// 中间件
+function genBarMiddleware() {
+    return [
+        {
+            title: "RabbitMQ",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "01.RabbitMQ/01.什么是MQ.md",
+                "01.RabbitMQ/02.RabbitMQ 介绍.md",
+                "01.RabbitMQ/03.RabbitMQ 安装.md",
+                "01.RabbitMQ/04.消息确认机制.md",
+                "01.RabbitMQ/05.RabbitMQ 消息模型.md",
+                "01.RabbitMQ/06.消息发布的权衡 .md",
+                "01.RabbitMQ/07.消息消费的权衡.md",
+                "01.RabbitMQ/08.消息的拒绝.md",
+                "01.RabbitMQ/09.死信和死信队列.md",
+                "01.RabbitMQ/10.消息队列的控制.md",
+                "01.RabbitMQ/11.Spring 集成 RabbitMQ.md",
+                "01.RabbitMQ/12.SpringBoot 集成 RabbitMQ.md",
+                "01.RabbitMQ/13.RabbitMQ 补偿机制、消息幂等性实践.md",
+                "01.RabbitMQ/14.RabbitMQ 延时队列实践.md",
+                "01.RabbitMQ/20.RabbitMQ 总结.md",
+            ]
+        },
+    ]
+}
 
 
 

@@ -317,7 +317,11 @@ module.exports = {
                         text: '开发工具',
                         items: [
                             {
-                                text: 'IDEA中使用Git',
+                                text: 'Maven',
+                                link: '/md/20.开发工具/01.项目管理 Maven.md'
+                            },
+                            {
+                                text: 'Git',
                                 link: '/md/20.开发工具/02.IDEA中使用Git.md'
                             },
                         ]
@@ -679,6 +683,7 @@ function genBarTools() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "01.项目管理 Maven.md",
                 "02.IDEA中使用Git.md",
             ]
         },

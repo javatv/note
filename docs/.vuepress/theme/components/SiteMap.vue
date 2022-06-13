@@ -177,6 +177,10 @@ export default {
             title: '开发工具',
             list: [
               {
+                title: 'Maven',
+                url: '/md/20.开发工具/01.项目管理 Maven.html'
+              },
+              {
                 title: 'Git',
                 url: '/md/20.开发工具/02.IDEA中使用Git.html'
               },

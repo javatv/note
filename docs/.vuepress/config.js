@@ -238,7 +238,15 @@ module.exports = {
                             {
                                 text: 'SpringCloud Alibaba',
                                 link: '/md/04.spring/02.SpringCloud Alibaba/01.简介.md'
-                            }
+                            },
+                            {
+                                text: 'SpringSecurity',
+                                link: '/md/04.spring/03.SpringSecurity/01.快速上手.md'
+                            },
+                            {
+                                text: 'SpringSecurity实战',
+                                link: '/md/30.认证授权框架/01.基础设施.md'
+                            },
                         ]
                     },
                     {
@@ -354,6 +362,7 @@ module.exports = {
                     "/md/15.设计模式/": genBarDesignPatterns(),
                     "/md/20.开发工具/": genBarTools(),
                     "/md/21.关于/": genBarAbout(),
+                    "/md/30.认证授权框架/": genBarSystemStructure(),
                 }
             }
         }
@@ -480,6 +489,31 @@ function genBarSpring() {
                 "02.SpringCloud Alibaba/04.服务熔断Sentinel.md",
                 "02.SpringCloud Alibaba/05.路由网关Gateway.md",
                 "02.SpringCloud Alibaba/06.服务配置中心Nacos Config.md",
+            ]
+        },
+        {
+            title: "SpringSecurity+OAuth2",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "03.SpringSecurity/01.快速上手.md",
+                "03.SpringSecurity/02.工作原理.md",
+                "03.SpringSecurity/03.分布式系统认证方案.md",
+                "03.SpringSecurity/04.OAuth2.0.md",
+            ]
+        }
+    ]
+}
+
+// 系统架构
+function genBarSystemStructure() {
+    return [
+        {
+            title: "基础设施搭建",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "01.基础设施.md",
             ]
         },
     ]

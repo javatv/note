@@ -395,6 +395,7 @@ function genBarJavaCore() {
                 "01.java基础/01.泛型.md",
                 "01.java基础/02.序列化和反序列化.md",
                 "01.java基础/03.深拷贝和浅拷贝.md",
+                "01.java基础/04.Java 函数式编程.md",
                 "01.java基础/15.SimpleDateFormat 并发隐患及其解决.md",
             ]
         },
